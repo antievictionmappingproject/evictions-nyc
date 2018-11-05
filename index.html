@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset='utf-8' />
-    <title>Draw GeoJSON points</title>
+    <title>Evictions in NYC</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
@@ -26,7 +26,10 @@ var map = new mapboxgl.Map({
 
 map.on('load', function () {
 
-    var url = 'evictionsNYC.geojson';
+    var url = 'https://cdn.jsdelivr.net/gh/antievictionmappingproject/evictions-nyc/data/evictionsNYC.geojson';
+
+    // LICENSE: Work licensed under Creative Commons BY NC SA 4.0 International License.
+    // Data sourced from NYC Marshals. Data cleaning, geocoding, and validation by the Housing Data Coalition. 
 
     map.addSource('evictions_nyc', 
         { 
