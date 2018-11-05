@@ -1,0 +1,1 @@
+Data sourced from NYC Marshals. Data cleaning, geocoding, and validation by the Housing Data Coalition. Work licensed under Creative Commons BY NC SA 4.0 International License.
